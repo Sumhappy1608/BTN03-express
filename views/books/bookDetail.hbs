@@ -1,0 +1,28 @@
+<div class="templatemo_product_box">
+    <h1>{{book.title}}  <span>{{book.authorInfo}}</span></h1>
+    <img src={{book.picture}} alt="image" />
+    <div class="product_info" style="font-size: 14px;">
+        <p>{{book.describe}}</p>
+        <h3>Price: {{book.basePrice}}</h3>
+        {{!-- <div class="buy_now_button">
+            <a href="subpage.html">Buy Now</a>
+        </div> --}}
+        
+    </div>
+    
+    <div class="cleaner">&nbsp;</div>
+</div>
+
+<div>
+    &ensp;
+    <p class="bookInfo" style="font-size: 14px; padding-left:5px;">{{book.info}}</p>
+</div>
+
+
+<div class="detail_button">
+    <form action="/detail/back" method="GET" style="margin-left:40%;">
+        <div class="detail_button">
+            <button type="submit">Quay lại</button>
+        </div>
+    </form>
+</div>

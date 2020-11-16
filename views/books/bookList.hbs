@@ -1,0 +1,21 @@
+{{#each books}}
+    <div class="templatemo_product_box">
+        <h1>{{title}}  <span>{{authorInfo}}</span></h1>
+        <img src={{picture}} alt="image" />
+        <div class="product_info">
+            <p>{{describe}}</p>
+            <h3>Price: {{basePrice}}</h3>
+            {{!-- <div class="buy_now_button">
+                <a href="subpage.html">Buy Now</a>
+            </div> --}}
+            <div class="detail_button">
+                <form action="/book_detail" method="GET">
+                    <div class="detail_button">
+                        <button id="id" type="submit" name="detail" value={{id}}>Detail</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+{{/each}}
